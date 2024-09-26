@@ -11,7 +11,7 @@ eadep_src=$root_dir/.Sources/ea-dep
 
 # ColorzCore
 
-dotnet publish -o $root_dir $colorzcore_src/ColorzCore/ColorzCore.csproj
+dotnet publish -r linux-x64 --self-contained true -c Release -o $root_dir $colorzcore_src/ColorzCore/ColorzCore.csproj
 
 # EA Standard Library
 
